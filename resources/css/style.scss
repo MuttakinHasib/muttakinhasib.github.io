@@ -10,7 +10,7 @@ $color-text-gray: #797979;
 $color-light-gray:#F8FAFF;
 $color-pink: #f36;
 $color-gradient:linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
-$color-text-gradient:linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
+$color-text-gradient:linear-gradient(45deg, #2f59e4 0%, #ed239f 100%);
 
 /*
  *
@@ -59,6 +59,38 @@ a {
 
 section {
     padding: 3.5rem 0;
+}
+
+.top-text {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    color: $color-text-gray;
+
+    span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-block;
+        width: 100px;
+        margin-left: 15px;
+        height: 2px;
+        background: $color-pink;
+        filter: blur(4px);
+    }
+}
+.heading-gradient{
+    color: transparent;
+    background: $color-text-gradient;
+    -webkit-background-clip: text;
+    font-weight: bold;
+}
+
+.little-description{
+    font-size: 15px;
+    color: $color-text-gray;
+    line-height: 27px;
+    font-weight: 300;
 }
 
 /*
@@ -156,12 +188,12 @@ header {
  */
 
 .home {
-    background: url(img/home-banner.webp.png);
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    // background: url(img/home-banner.webp.png);
+    // background-position: top center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
     width: 100%;
-    min-height: 890px;
+    // min-height: 890px;
 
     .banner-content {
         h3 {
@@ -207,18 +239,12 @@ header {
     .hero-img {
         padding-top: 141px;
     }
-}
 
-/*
+    /*
  *
- * STATISTICS SECTION
+ * STATISTICS AREA
  *
  */
-
-.statistics {
-    position: relative;
-    margin-top: -200px;
-
     .statistics-item {
         margin: 10px 0;
         padding: 30px 15px;
@@ -238,4 +264,14 @@ header {
             color: $color-text-gray;
         }
     }
+}
+
+/*
+ *
+ * ABOUT SECTION
+ *
+ */
+
+.about {
+    .about-content {}
 }

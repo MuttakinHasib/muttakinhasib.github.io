@@ -42,8 +42,7 @@ a:hover {
  */
 .logo {
   color: transparent;
-  background: -webkit-gradient(linear, left top, right top, from(#1345e6), to(#ed239f));
-  background: linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
+  background: linear-gradient(45deg, #2f59e4 0%, #ed239f 100%);
   -webkit-background-clip: text;
   font-weight: bold;
   margin-bottom: 0;
@@ -51,6 +50,41 @@ a:hover {
 
 section {
   padding: 3.5rem 0;
+}
+
+.top-text {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  color: #797979;
+}
+
+.top-text span {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: inline-block;
+  width: 100px;
+  margin-left: 15px;
+  height: 2px;
+  background: #f36;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+}
+
+.heading-gradient {
+  color: transparent;
+  background: linear-gradient(45deg, #2f59e4 0%, #ed239f 100%);
+  -webkit-background-clip: text;
+  font-weight: bold;
+}
+
+.little-description {
+  font-size: 15px;
+  color: #797979;
+  line-height: 27px;
+  font-weight: 300;
 }
 
 /*
@@ -149,12 +183,12 @@ header .main-menu .nav-link:not(.nav-link-active):hover {
  *
  */
 .home {
-  background: url(img/home-banner.webp.png);
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
-  min-height: 890px;
+  /*
+ *
+ * STATISTICS AREA
+ *
+ */
 }
 
 .home .banner-content h3 {
@@ -188,8 +222,7 @@ header .main-menu .nav-link:not(.nav-link-active):hover {
 }
 
 .home .banner-content .social-icons a:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#1345e6), to(#ed239f));
-  background: linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
+  background: linear-gradient(45deg, #2f59e4 0%, #ed239f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
@@ -199,34 +232,29 @@ header .main-menu .nav-link:not(.nav-link-active):hover {
   padding-top: 141px;
 }
 
-/*
- *
- * STATISTICS SECTION
- *
- */
-.statistics {
-  position: relative;
-  margin-top: -200px;
-}
-
-.statistics .statistics-item {
+.home .statistics-item {
   margin: 10px 0;
   padding: 30px 15px;
   text-align: center;
   background: #F8FAFF;
 }
 
-.statistics .statistics-item h3 {
+.home .statistics-item h3 {
   color: transparent;
-  background: -webkit-gradient(linear, left top, right top, from(#1345e6), to(#ed239f));
-  background: linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
+  background: linear-gradient(45deg, #2f59e4 0%, #ed239f 100%);
   -webkit-background-clip: text;
   font-size: 27px;
 }
 
-.statistics .statistics-item p {
+.home .statistics-item p {
   font-size: 16px;
   font-weight: 300;
   color: #797979;
 }
+
+/*
+ *
+ * ABOUT SECTION
+ *
+ */
 /*# sourceMappingURL=style.css.map */
