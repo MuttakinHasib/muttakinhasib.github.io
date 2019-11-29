@@ -1,5 +1,7 @@
+// ! PRELOADER
 $(window).on('load', function () {
-    $('.preloader').fadeOut(500);
+    $('.block').delay(2000).fadeOut(1000);
+    $('.preloader').delay(3000).fadeOut(500);
 });
 // ! SCROLL TO ACTIVE NAVBAR
 
