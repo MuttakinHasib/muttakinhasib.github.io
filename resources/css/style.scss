@@ -7,10 +7,13 @@
 $color-black: #000;
 $color-dark: #05364d;
 $color-text-gray: #797979;
-$color-light-gray:#F8FAFF;
+$color-light-gray: #f8faff;
 $color-pink: #f36;
-$color-gradient:linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
-$color-text-gradient:linear-gradient(45deg, #2f59e4 0%, #ed239f 100%);
+$color-gradient: linear-gradient(to right,
+    #1345e6 0%,
+    #ed239f 51%,
+    #1345e6 100%);
+$color-text-gradient: linear-gradient(45deg, #2f59e4 0%, #ed239f 100%);
 
 /*
  *
@@ -29,10 +32,10 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     text-rendering: optimizeLegibility;
     line-height: 1.3;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     font-size: 1rem;
 }
 
@@ -41,6 +44,148 @@ a {
 
     &:hover {
         text-decoration: none;
+    }
+}
+
+/*
+ *
+ * PRELOADER
+ *
+ */
+.preloader{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .loading {
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    
+        .block {
+            width: 33px;
+            height: 33px;
+            position: relative;
+            display: block;
+            transform-origin: -50% center;
+            border-radius: 15%;
+    
+            &:after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: lightblue;
+                border-radius: 15%;
+                box-shadow: 0px 0px 10px 0px rgba(#1c9fff, 0.4);
+            }
+    
+            &:nth-child(1) {
+                animation: slide 1.5s ease-in-out infinite alternate;
+    
+                &:after {
+                    animation: color-change 1.5s ease-in-out infinite alternate;
+                }
+            }
+    
+            @for $i from 1 to 5 {
+                &:nth-child(#{$i + 1}) {
+                    animation: flip-#{$i} 1.5s ease-in-out infinite alternate;
+    
+                    &:after {
+                        animation: squidge-#{$i} 1.5s ease-in-out infinite alternate;
+                    }
+                }
+            }
+    
+            &:nth-child(2):after {
+                background-color: #1c9fff;
+            }
+    
+            &:nth-child(3):after {
+                background-color: #1fb1fd;
+            }
+    
+            &:nth-child(4):after {
+                background-color: #22c7fb;
+            }
+    
+            &:nth-child(5):after {
+                background-color: #23d3fb;
+            }
+        }
+    }
+}
+
+@keyframes slide {
+    0% {
+        background-color: #1795ff;
+        transform: translatex(0vw);
+    }
+
+    100% {
+        background-color: #23d3fb;
+        transform: translatex(calc(250px - (33px * 1.25)));
+    }
+}
+
+@keyframes color-change {
+    0% {
+        background-color: #1795ff;
+    }
+
+    100% {
+        background-color: #23d3fb;
+    }
+}
+
+@for $i from 1 to 5 {
+    @keyframes flip-#{$i} {
+
+        0%,
+        #{$i * 15}% {
+            transform: rotate(0);
+        }
+
+        #{$i * 15 + 20}%,
+        100% {
+            transform: rotate(-180deg);
+        }
+    }
+
+    @keyframes squidge-#{$i} {
+        #{$i * 15 - 10}% {
+            transform-origin: center bottom;
+            transform: scalex(1) scaley(1);
+        }
+
+        #{$i * 15}% {
+            transform-origin: center bottom;
+            transform: scalex(1.3) scaley(0.7);
+        }
+
+        #{$i * 15 + 10}%,
+        #{$i * 15 + 5}% {
+            transform-origin: center bottom;
+            transform: scalex(0.8) scaley(1.4);
+        }
+
+        #{$i * 15 + 40}%,
+        100% {
+            transform-origin: center top;
+            transform: scalex(1) scaley(1);
+        }
+
+        #{$i * 15 + 25}% {
+            transform-origin: center top;
+            transform: scalex(1.3) scaley(0.7);
+        }
     }
 }
 
@@ -119,31 +264,32 @@ section {
     line-height: 30px;
     font-size: 16px;
     font-weight: 500;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
         background-position: right center;
         color: #fff;
     }
 }
-.primary_border_btn{
+
+.primary_border_btn {
     display: inline-block;
     padding-bottom: 10px;
     position: relative;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     font-size: 13px;
     font-weight: 500;
     text-transform: uppercase;
     color: $color-dark;
     margin-top: 20px;
 
-    &:hover{
-        &::before{
+    &:hover {
+        &::before {
             width: 90px;
         }
     }
 
-    &::before{
+    &::before {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -151,10 +297,9 @@ section {
         background: $color-text-gradient;
         width: 45px;
         height: 2px;
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
 }
-
 
 /*
  *
@@ -167,11 +312,10 @@ section {
     top: -70px;
     left: 0;
     right: 0;
-    background:
-        #fff;
+    background: #fff;
     transform: translateY(70px);
     transition: transform 500ms ease, background 500ms ease;
-    box-shadow: 0 3px 16px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.1);
 }
 
 .header-area {
@@ -211,7 +355,7 @@ header {
 
         .nav-link:not(.nav-link-active) {
             color: $color-black !important;
-            transition: all .2s ease-in-out;
+            transition: all 0.2s ease-in-out;
 
             &:hover {
                 color: $color-pink !important;
@@ -263,7 +407,7 @@ header {
                 font-size: 25px;
                 color: $color-text-gray;
                 margin-right: 25px;
-                transition: all .3s ease-in-out;
+                transition: all 0.3s ease-in-out;
 
                 &:hover {
                     background: $color-text-gradient;
@@ -289,7 +433,7 @@ header {
         padding: 30px 15px;
         text-align: center;
         background: $color-light-gray;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
 
         &:hover {
             box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
@@ -331,14 +475,18 @@ header {
         text-align: center;
         padding: 35px;
         background: $color-light-gray;
-        transition: all .2s ease-in-out;
+        transition: all 0.2s ease-in-out;
 
-        &:hover{
-            box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+        h4 {
+            margin: 1rem 0;
         }
-        .service-icon{
+
+        &:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-icon {
             margin-bottom: 20px;
         }
-        
     }
 }
