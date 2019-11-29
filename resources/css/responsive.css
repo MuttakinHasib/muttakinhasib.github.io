@@ -1,1 +1,6 @@
-/* No CSS *//*# sourceMappingURL=responsive.css.map */
+@media screen and (max-width: 600px) {
+  .home h1 {
+    font-size: 35px !important;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
