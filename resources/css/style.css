@@ -37,6 +37,15 @@ a:hover {
 
 /*
  *
+ * HEADING
+ *
+ */
+h2 {
+  color: #05364d;
+}
+
+/*
+ *
  * REUSEABLE COMPONENTS
  *
  */
@@ -112,6 +121,35 @@ section {
   color: #fff;
 }
 
+.primary_border_btn {
+  display: inline-block;
+  padding-bottom: 10px;
+  position: relative;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #05364d;
+  margin-top: 20px;
+}
+
+.primary_border_btn:hover::before {
+  width: 90px;
+}
+
+.primary_border_btn::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background: linear-gradient(45deg, #2f59e4 0%, #ed239f 100%);
+  width: 45px;
+  height: 2px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
 /*
  *
  * HEADER SECTION
@@ -154,7 +192,7 @@ header .main-menu .navbar-right {
 
 header .main-menu .navbar-nav .nav-item {
   margin-left: 30px;
-  line-height: 50px;
+  line-height: 40px;
 }
 
 header .main-menu .navbar-nav .nav-item .nav-link {
@@ -237,6 +275,13 @@ header .main-menu .nav-link:not(.nav-link-active):hover {
   padding: 30px 15px;
   text-align: center;
   background: #F8FAFF;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.home .statistics-item:hover {
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .home .statistics-item h3 {
@@ -257,4 +302,25 @@ header .main-menu .nav-link:not(.nav-link-active):hover {
  * ABOUT SECTION
  *
  */
+/*
+ *
+ * SERVICE SECTION
+ *
+ */
+.service .service-item {
+  text-align: center;
+  padding: 35px;
+  background: #F8FAFF;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.service .service-item:hover {
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.service .service-item .service-icon {
+  margin-bottom: 20px;
+}
 /*# sourceMappingURL=style.css.map */
