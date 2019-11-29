@@ -1,5 +1,5 @@
 // * COLORS
- 
+
 $color-black: #000;
 $color-dark: #05364d;
 $color-text-gray: #797979;
@@ -325,6 +325,7 @@ section {
 header {
     width: 100%;
     z-index: 999;
+    background: #fff;
 
     .main-menu {
         .navbar-toggler {
