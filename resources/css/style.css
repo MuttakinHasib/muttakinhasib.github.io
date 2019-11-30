@@ -589,7 +589,9 @@ a:hover {
  * HEADING
  *
  */
-h2 {
+h2,
+h3,
+h4 {
   color: #05364d;
 }
 
@@ -876,5 +878,31 @@ header .main-menu .nav-link:not(.nav-link-active):hover {
 
 .service .service-item .service-icon {
   margin-bottom: 20px;
+}
+
+/*
+ *
+ * TESTIMONIAL SECTION
+ *
+ */
+.testimonial {
+  background: #f8faff;
+}
+
+.testimonial .person-img {
+  width: 250px;
+  border: 15px solid  #eee;
+}
+
+.testimonial .person-img img {
+  width: 100%;
+}
+
+.testimonial .person-comment .rate svg:not(:last-child) {
+  color: #FFD804;
+}
+
+.testimonial .person-comment .rate svg:last-child {
+  color: #797979;
 }
 /*# sourceMappingURL=style.css.map */
