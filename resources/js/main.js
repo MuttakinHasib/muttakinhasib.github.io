@@ -20,6 +20,7 @@ $(window).scroll(function() {
 });
 
 $(document).ready(function() {
+    var mixer = mixitup('.portfolio-gallery');
     //Testimonial Slider
 
     $(".testimonial-slider").owlCarousel({

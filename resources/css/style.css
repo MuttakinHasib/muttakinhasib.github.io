@@ -701,6 +701,42 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
+.port-btn {
+  display: inline-block;
+  border: none;
+  margin: 5px;
+  background: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 8px 20px;
+  outline: none !important;
+  font-weight: 400;
+  font-size: 15px;
+  background: #eeeeee;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.port-btn:first-child {
+  margin-left: 0;
+}
+
+.port-btn:hover {
+  color: #f8faff;
+  background: #f36;
+}
+
+.mixitup-control-active {
+  color: #f8faff;
+  background: #f36;
+}
+
+.mixitup-control-active:focus {
+  -webkit-box-shadow: 0 0 0 3px rgba(255, 51, 102, 0.2);
+          box-shadow: 0 0 0 3px rgba(255, 51, 102, 0.2);
+}
+
 /*
  *
  * HEADER SECTION
@@ -891,7 +927,7 @@ header .main-menu .nav-link:not(.nav-link-active):hover {
 
 .testimonial .person-img {
   width: 250px;
-  border: 15px solid  #eee;
+  border: 15px solid #eee;
 }
 
 .testimonial .person-img img {
@@ -899,10 +935,84 @@ header .main-menu .nav-link:not(.nav-link-active):hover {
 }
 
 .testimonial .person-comment .rate svg:not(:last-child) {
-  color: #FFD804;
+  color: #ffd804;
 }
 
 .testimonial .person-comment .rate svg:last-child {
   color: #797979;
+}
+
+/*
+ *
+ * PORTFOLIO SECTION
+ *
+ */
+.portfolio .port-img {
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio .port-img img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 100%;
+}
+
+.portfolio .port-img::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background: linear-gradient(45deg, #2f59e4b4, #ed23a0c4);
+  width: 0;
+  height: 101%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.portfolio .port-img:hover::before {
+  width: 100%;
+}
+
+.portfolio .port-img:hover img {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.portfolio .port-img:hover .view {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.portfolio .port-img img {
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.portfolio .port-img .view {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  display: inline-block;
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  font-size: 45px;
 }
 /*# sourceMappingURL=style.css.map */

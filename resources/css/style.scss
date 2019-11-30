@@ -2,14 +2,16 @@
 
 $color-black: #000;
 $color-dark: #05364d;
-$color-gray: #F8F9FA;
+$color-gray: #f8f9fa;
 $color-text-gray: #797979;
 $color-light-gray: #f8faff;
 $color-pink: #f36;
-$color-gradient: linear-gradient(to right,
+$color-gradient: linear-gradient(
+    to right,
     #1345e6 0%,
     #ed239f 51%,
-    #1345e6 100%);
+    #1345e6 100%
+);
 $color-text-gradient: linear-gradient(45deg, #2f59e4 0%, #ed239f 100%);
 
 /*
@@ -100,7 +102,11 @@ a {
                     animation: flip-#{$i} 1.5s ease-in-out infinite alternate;
 
                     &:after {
-                        animation: squidge-#{$i} 1.5s ease-in-out infinite alternate;
+                        animation: squidge-#{$i}
+                            1.5s
+                            ease-in-out
+                            infinite
+                            alternate;
                     }
                 }
             }
@@ -148,7 +154,6 @@ a {
 
 @for $i from 1 to 5 {
     @keyframes flip-#{$i} {
-
         0%,
         #{$i * 15}% {
             transform: rotate(0);
@@ -304,6 +309,37 @@ section {
     }
 }
 
+.port-btn {
+    &:first-child {
+        margin-left: 0;
+    }
+    display: inline-block;
+    border: none;
+    margin: 5px;
+    background: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 8px 20px;
+    outline: none !important;
+    font-weight: 400;
+    font-size: 15px;
+    background: rgb(238, 238, 238);
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        color: $color-light-gray;
+        // transition: all .2s ease-in-out;
+        background: $color-pink;
+    }
+}
+.mixitup-control-active {
+    color: $color-light-gray;
+    // transition: all .2s ease-in-out;
+    background: $color-pink;
+    &:focus {
+        box-shadow: 0 0 0 3px rgba($color-pink, 0.2);
+    }
+}
 /*
  *
  * HEADER SECTION
@@ -503,13 +539,14 @@ header {
 
 .testimonial {
     background: $color-light-gray;
+
     // background: $color-gray;
     .person-img {
         // height: 150px;
         width: 250px;
         // overflow: hidden;
         // border-radius: 0 35px;
-        border: 15px solid  #eee;
+        border: 15px solid #eee;
 
         img {
             width: 100%;
@@ -518,13 +555,79 @@ header {
     }
 
     .person-comment {
-        .rate{
-            svg:not(:last-child){
-                color: #FFD804;
+        .rate {
+            svg:not(:last-child) {
+                color: #ffd804;
             }
-            svg:last-child{
+
+            svg:last-child {
                 color: $color-text-gray;
             }
+        }
+    }
+}
+
+/*
+ *
+ * PORTFOLIO SECTION
+ *
+ */
+
+.portfolio {
+    .port-img {
+        overflow: hidden;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        img {
+            object-fit: fill;
+            height: 100%;
+        }
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            background: linear-gradient(45deg, #2f59e4b4, #ed23a0c4);
+            width: 0;
+            height: 101%;
+            // transform: scaleX(0);
+            transition: all 0.3s ease-in-out;
+            z-index: 2;
+        }
+        &:hover {
+            &::before {
+                // transform: scale(1);
+                width: 100%;
+            }
+            img {
+                transform: scale(1.25);
+            }
+            .view {
+                transform: translate(-50%, -50%);
+                opacity: 1;
+                visibility: visible;
+                pointer-events: all;
+            }
+        }
+        img {
+            width: 100%;
+            transition: all 0.3s ease-in-out;
+            transform: scale(1);
+        }
+        .view {
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(50%, 50%);
+            display: inline-block;
+            z-index: 3;
+            opacity: 0;
+            visibility: hidden;
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+            pointer-events: none;
+            font-size: 45px;
         }
     }
 }
