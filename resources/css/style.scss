@@ -663,6 +663,20 @@ header {
         }
 
         .blog-img {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                // background: rgba(0, 0, 0, 0.3);
+                background: linear-gradient(45deg, #2f59e45e, #ed23a069);
+                z-index: 2;
+            }
+
             overflow: hidden;
             // border: 15px solid rgba($color-pink,0.1);
             // box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -679,6 +693,22 @@ header {
             }
 
             color: #1fb1fd !important;
+        }
+    }
+}
+
+
+/*
+*
+* -- BRAND
+*
+*/
+
+.brand {
+    .brand-img {
+        .single-brand- {
+            display: block;
+            margin: 5px 25px;
         }
     }
 }

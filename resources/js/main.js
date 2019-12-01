@@ -42,4 +42,27 @@ $(document).ready(function() {
             }
         }
     });
+    $(".brand-img").owlCarousel({
+        items: 1,
+        loop: true,
+        // dots: true,
+        // nav: true,
+        autoplay: true,
+        mouseDrag: true,
+        responsive: {
+            1280: {
+                items: 5
+            },
+            900:{
+                items: 3
+            },
+            600: {
+                items: 2
+            },
+            400: {
+                items: 2
+            }
+
+        }
+    });
 });
