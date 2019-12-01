@@ -1015,4 +1015,49 @@ header .main-menu .nav-link:not(.nav-link-active):hover {
   pointer-events: none;
   font-size: 45px;
 }
+
+/*
+ *
+ * BLOG SECTION
+ *
+ */
+.blog {
+  background: #f8f9fa;
+}
+
+.blog .blog-content {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.blog .blog-content:hover {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.blog .blog-content:hover .blog-img img {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.blog .blog-content .blog-img {
+  overflow: hidden;
+}
+
+.blog .blog-content .blog-img img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.blog .blog-content .publish-info {
+  color: #1fb1fd !important;
+}
+
+.blog .blog-content .publish-info a {
+  color: #1fb1fd !important;
+}
 /*# sourceMappingURL=style.css.map */
