@@ -1,4 +1,7 @@
 /*
+ * ------------- Design & Developed by Hasib Molla ------------
+ */
+/*
  *
  * BASIC SETUP
  *
@@ -663,6 +666,8 @@ section {
   line-height: 30px;
   font-size: 16px;
   font-weight: 500;
+  border: none;
+  cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -1074,12 +1079,51 @@ header .main-menu .nav-link:not(.nav-link-active):hover {
 }
 
 /*
-*
-* -- BRAND
-*
-*/
+ *
+ * -- BRAND
+ *
+ */
 .brand .brand-img .single-brand- {
   display: block;
   margin: 5px 25px;
+}
+
+/*
+ *
+ * -- CONTACT
+ *
+ */
+.contact form .input {
+  display: inline-block;
+  padding: 15px 25px !important;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.contact .contact-icon {
+  font-size: 30px;
+  margin-right: 15px;
+  color: #1c9fff;
+}
+
+/*
+ *
+ * -- FOOTER SECTION
+ *
+ */
+footer {
+  background: #F8F9FA;
+  padding: 3.5rem 0;
+}
+
+footer .social-links .social-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
 }
 /*# sourceMappingURL=style.css.map */
