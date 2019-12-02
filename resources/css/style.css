@@ -33,6 +33,15 @@ a:hover {
   text-decoration: none;
 }
 
+.navbar-toggler.mixitup-control-active {
+  background: none !important;
+}
+
+.navbar-toggler.mixitup-control-active:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 /*
  *
  * PRELOADER
