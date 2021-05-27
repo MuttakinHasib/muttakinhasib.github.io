@@ -15,9 +15,14 @@ const Header = () => {
       }`}
     >
       <nav className='flex items-center justify-between w-full'>
-        <div className='text-semibold font-SFMono uppercase text-white text-lg'>
+        <div>
           <Link href='/'>
-            <a>Hasib</a>
+            <a
+              className='font-semibold font-calibre uppercase text-white text-xl'
+              style={{ letterSpacing: '1px' }}
+            >
+              Hasib
+            </a>
           </Link>
         </div>
         <div className='hidden md:flex items-center'>
