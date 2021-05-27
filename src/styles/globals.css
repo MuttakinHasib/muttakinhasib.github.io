@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 @layer base {
   @font-face {
     font-family: 'Calibre';
@@ -58,7 +58,7 @@
       url(/fonts/SFMono/SFMono-Semibold.woff) format('woff'),
       url(/fonts/SFMono/SFMono-Semibold.ttf) format('truetype');
   }
-}
+} */
 
 html {
   scroll-behavior: smooth;

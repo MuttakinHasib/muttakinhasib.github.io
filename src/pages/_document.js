@@ -26,6 +26,8 @@ class MyDocument extends Document {
             name='twitter:description'
             content='Hasib is a passionate self-taught Full Stack web developer from Bangladesh who develop web applications, mobile applications and desktop applications '
           />
+          <link href="http://fonts.cdnfonts.com/css/sf-mono" rel="stylesheet"/>
+                
           {/* <meta name='twitter:image' content={seo.image} /> */}
         </Head>
         <body className='bg-darkNavy'>
