@@ -2,7 +2,7 @@ import React from 'react';
 
 const Landing = () => {
   return (
-    <section className='min-h-[90vh] pt-[100px] flex flex-col justify-center items-start'>
+    <section className='min-h-[90vh] md:pt-[100px] flex flex-col justify-center items-start'>
       <div>
         <p className='text-base ml-1 mb-[30px] uppercase text-green font-SFMono'>
           Hey there!
