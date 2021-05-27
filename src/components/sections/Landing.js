@@ -10,7 +10,7 @@ const Landing = () => {
       </div>
       <div>
         <h1
-          className='tracking-[1.5px] text-[30px] sm:text-[40px] md:text-[50px] lg:text-[65px] xl:text-[70px] leading-[1.1] font-semibold uppercase text-blueWhite'
+          className='tracking-[1.5px] text-[35px] sm:text-[40px] md:text-[50px] lg:text-[65px] xl:text-[70px] leading-[1.1] font-semibold uppercase text-blueWhite'
           style={{ wordSpacing: '4px' }}
         >
           I am Hasib
