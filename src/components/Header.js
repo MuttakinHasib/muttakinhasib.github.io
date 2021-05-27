@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <header
-      className={`bg-darkNavy absolute flex items-center w-full px-6 md:px-10 ${
+      className={`z-50 bg-darkNavy absolute flex items-center w-full px-6 md:px-10 ${
         scrollPosition >= 120
           ? 'header-active h-[70px] bg-opacity-95 border-b border-gray-900'
           : 'h-[100px]'
@@ -18,7 +18,7 @@ const Header = () => {
         <div>
           <Link href='/'>
             <a
-              className='font-semibold uppercase text-white text-xl'
+              className='font-semibold ml-1 uppercase text-white text-xl'
               style={{ letterSpacing: '1px' }}
             >
               Hasib

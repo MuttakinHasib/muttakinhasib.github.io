@@ -2,25 +2,28 @@ import React from 'react';
 
 const Landing = () => {
   return (
-    <section className='min-h-[75vh] pt-[100px] flex flex-col justify-center items-start'>
+    <section className='min-h-[90vh] pt-[100px] flex flex-col justify-center items-start'>
       <div>
         <p className='text-base ml-1 mb-[30px] uppercase text-green font-SFMono'>
           Hey there!
         </p>
       </div>
       <div>
-        <h1 className='text-[50px] sm:text-[65px] md:text-[70px] lg:text-[80px] leading-[1.1] font-semibold uppercase text-blueWhite'>
+        <h1
+          className='tracking-[1.5px] text-[30px] sm:text-[40px] md:text-[50px] lg:text-[65px] xl:text-[70px] leading-[1.1] font-semibold uppercase text-blueWhite'
+          style={{ wordSpacing: '4px' }}
+        >
           I am Hasib
         </h1>
       </div>
       <div>
-        <h1 className='text-[30px] sm:text-[45px] md:text-[60px] lg:text-[70px] font-light uppercase'>
-          Full Stack Developer
-        </h1>
+        <h2 className='tracking-[1px] text-[25px] sm:text-[30px] md:text-[40px] lg:text-[50px] xl:text-[55px] font-light uppercase'>
+          Full Stack Web Developer
+        </h2>
       </div>
       <div>
-        <p className='max-w-[500px] ml-1 mt-5 prose prose-lg text-lightSlate'>
-          A passionate self-taught Full Stack developer from Bangladesh. I
+        <p className='max-w-[550px] ml-1 mt-5 prose prose-lg text-lightSlate'>
+          A passionate self-taught Full Stack developer from Bangladesh. <br />I
           develop web applications, mobile applications and desktop applications
         </p>
       </div>

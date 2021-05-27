@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { Container } from '../components';
-import { About, Landing } from '../components/sections';
+import { About, Experience, Landing, Work } from '../components/sections';
 const HomeScreen = () => {
   return (
     <>
@@ -10,6 +10,8 @@ const HomeScreen = () => {
       <Container>
         <Landing />
         <About />
+        <Experience />
+        <Work />
       </Container>
     </>
   );
