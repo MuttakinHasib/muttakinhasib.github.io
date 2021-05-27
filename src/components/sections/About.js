@@ -9,8 +9,8 @@ const About = () => {
         <div className='col-span-2'>
           <div>
             <p className='max-w-[500px] text-base ml-1 mt-5 font-SFMono'>
-              A passionate self-taught Full Stack developer from Bangladesh. I
-              develop web applications, mobile applications and desktop
+              A passionate self-taught Full Stack developer from Bangladesh.
+              <br />I develop web applications, mobile applications and desktop
               applications
             </p>
           </div>
