@@ -30,7 +30,7 @@ const Landing = () => {
       <div>
         <a
           href=''
-          className='px-7 py-5 border-2 border-green text-green mt-[50px] block font-SFMono leading-[1] rounded-[4px] hover:bg-greenTint transition-colors duration-300 ease-ease-transition'
+          className='px-6 py-4 md:px-7 md:py-5 border-2 border-green text-green mt-[50px] block font-SFMono leading-[1] rounded-[4px] hover:bg-greenTint transition-colors duration-300 ease-ease-transition'
         >
           Get In Touch
         </a>
