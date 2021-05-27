@@ -22,12 +22,12 @@ module.exports = {
         SFMono: ['SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono'],
       },
       transitionTimingFunction: {
-        'transition': 'cubic-bezier(0.645, 0.045, 0.355, 1)',
+        transition: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
       },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };

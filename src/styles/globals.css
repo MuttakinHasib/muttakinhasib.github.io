@@ -66,7 +66,7 @@ html {
   scrollbar-color: #0a192f #020c1b;
 }
 body {
-  font-family: 'Calibre', 'San Francisco', 'SF Pro Text';
+  /* font-family: 'Calibre', 'San Francisco', 'SF Pro Text'; */
   color: #a8b2d1;
 }
 body::-webkit-scrollbar {
