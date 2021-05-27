@@ -20,7 +20,7 @@ const Header = () => {
             <a>Hasib</a>
           </Link>
         </div>
-        <div className='flex items-center'>
+        <div className='hidden md:flex items-center'>
           <ol className='flex items-center justify-between list-outside'>
             {navLinks.map((link, index) => (
               <li
