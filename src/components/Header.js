@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import useScrollPosition from '../hooks/useScrollPosition';
 import { navLinks } from '../static';
 
@@ -14,8 +15,10 @@ const Header = () => {
       }`}
     >
       <nav className='flex items-center justify-between w-full'>
-        <div className='w-20 bg-red-200'>
-          <a href='/'></a>
+        <div className='text-semibold font-SFMono uppercase text-white text-lg'>
+          <Link href='/'>
+            <a>Hasib</a>
+          </Link>
         </div>
         <div className='flex items-center'>
           <ol className='flex items-center justify-between list-outside'>
