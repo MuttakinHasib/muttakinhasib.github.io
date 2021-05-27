@@ -18,7 +18,7 @@ const About = () => {
               Here are a few technologies I've been working with recently:
             </p>
           </div>
-          <ul className='ml-1 font-SFMono text-green list-inside tracking-[1px] list-[square] grid gap-x-4 gap-y-3 grid-cols-[repeat(2,minmax(140px,200px))]'>
+          <ul className='ml-1 font-SFMono text-green/80 list-inside tracking-[1px] list-[square] grid gap-x-4 gap-y-3 grid-cols-[repeat(2,minmax(140px,200px))]'>
             {skills.map((skill, index) => (
               <li className='before:' key={index}>
                 {skill.name}
