@@ -9,12 +9,12 @@ const Landing = () => {
         </p>
       </div>
       <div>
-        <h1 className='text-[55px] sm:text-[65px] md:text-[70px] lg:text-[80px] leading-[1.1] font-semibold uppercase text-blueWhite'>
+        <h1 className='text-[50px] sm:text-[65px] md:text-[70px] lg:text-[80px] leading-[1.1] font-semibold uppercase text-blueWhite'>
           I am Hasib
         </h1>
       </div>
       <div>
-        <h1 className='text-[35px] sm:text-[45px] md:text-[60px] lg:text-[70px] font-light uppercase'>
+        <h1 className='text-[30px] sm:text-[45px] md:text-[60px] lg:text-[70px] font-light uppercase'>
           Full Stack Developer
         </h1>
       </div>
