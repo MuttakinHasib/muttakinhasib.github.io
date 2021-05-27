@@ -18,7 +18,7 @@ const Header = () => {
         <div>
           <Link href='/'>
             <a
-              className='font-semibold font-calibre uppercase text-white text-xl'
+              className='font-semibold uppercase text-white text-xl'
               style={{ letterSpacing: '1px' }}
             >
               Hasib
