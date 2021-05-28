@@ -18,7 +18,6 @@ module.exports = {
         greenTint: 'rgba(100, 255, 218, 0.1)',
       },
       fontFamily: {
-        calibre: ['Calibre', 'San Francisco', 'SF Pro Text'],
         SFMono: ['SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono'],
       },
       transitionTimingFunction: {

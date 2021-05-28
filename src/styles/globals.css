@@ -1,64 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
-@layer base {
-  @font-face {
-    font-family: 'Calibre';
-    font-weight: 300;
-    src: url(/fonts/Calibre/Calibre-Light.woff2) format('woff2'),
-      url(/fonts/Calibre/Calibre-Light.woff) format('woff'),
-      url(/fonts/Calibre/Calibre-Light.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'Calibre';
-    font-weight: 400;
-    src: url(/fonts/Calibre/Calibre-Regular.woff2) format('woff2'),
-      url(/fonts/Calibre/Calibre-Regular.woff) format('woff'),
-      url(/fonts/Calibre/Calibre-Regular.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'Calibre';
-    font-weight: 500;
-    src: url(/fonts/Calibre/Calibre-Medium.woff2) format('woff2'),
-      url(/fonts/Calibre/Calibre-Medium.woff) format('woff'),
-      url(/fonts/Calibre/Calibre-Medium.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'Calibre';
-    font-weight: 600;
-    src: url(/fonts/Calibre/Calibre-Semibold.woff2) format('woff2'),
-      url(/fonts/Calibre/Calibre-Semibold.woff) format('woff'),
-      url(/fonts/Calibre/Calibre-Semibold.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'SF Mono';
-    font-weight: 400;
-    src: url(/public/fonts/SFMono/SFMono-Regular.woff2) format('woff2'),
-      url(/fonts/SFMono/SFMono-Regular.woff) format('woff'),
-      url(/fonts/SFMono/SFMono-Regular.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'SF Mono';
-    font-weight: 500;
-    src: url(/public/fonts/SFMono/SFMono-Medium.woff2) format('woff2'),
-      url(/fonts/SFMono/SFMono-Medium.woff) format('woff'),
-      url(/fonts/SFMono/SFMono-Medium.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'SF Mono';
-    font-weight: 600;
-    src: url(/public/fonts/SFMono/SFMono-Semibold.woff2) format('woff2'),
-      url(/fonts/SFMono/SFMono-Semibold.woff) format('woff'),
-      url(/fonts/SFMono/SFMono-Semibold.ttf) format('truetype');
-  }
-} */
 
 html {
   scroll-behavior: smooth;
@@ -66,12 +8,12 @@ html {
   scrollbar-color: #0a192f #020c1b;
 }
 body {
-  /* font-family: 'Calibre', 'San Francisco', 'SF Pro Text'; */
   color: #a8b2d1;
+  font-family: 'Roboto', sans-serif;
 }
 body::-webkit-scrollbar {
   width: 12px;
-  height:20px;
+  height: 20px;
 }
 body::-webkit-scrollbar-track {
   background: #0a192f;
@@ -101,8 +43,8 @@ body::-webkit-scrollbar-thumb {
   /* background: rgba(10, 25, 47, 0.85); */
   transform: translateY(70px);
   transition: transform 500ms ease, background 500ms ease;
-  /* box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7); */
-  box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.1); */
 }
 
 section {

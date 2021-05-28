@@ -10,7 +10,7 @@ const Header = () => {
     <header
       className={`z-50 bg-darkNavy absolute flex items-center w-full px-6 md:px-10 ${
         scrollPosition >= 120
-          ? 'header-active h-[70px] bg-opacity-95 border-b border-gray-900'
+          ? 'header-active h-[70px] bg-opacity-95'
           : 'h-[100px]'
       }`}
     >

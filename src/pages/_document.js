@@ -26,8 +26,13 @@ class MyDocument extends Document {
             name='twitter:description'
             content='Hasib is a passionate self-taught Full Stack web developer from Bangladesh who develop web applications, mobile applications and desktop applications '
           />
-          <link href="http://fonts.cdnfonts.com/css/sf-mono" rel="stylesheet"/>
-                
+          <link rel='preconnect' href='https://fonts.gstatic.com' />
+          <link
+            href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'
+            rel='stylesheet'
+          />
+          <link href='http://fonts.cdnfonts.com/css/sf-mono' rel='stylesheet' />
+
           {/* <meta name='twitter:image' content={seo.image} /> */}
         </Head>
         <body className='bg-darkNavy'>

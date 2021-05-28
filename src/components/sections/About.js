@@ -4,15 +4,17 @@ import { skills } from '../../static';
 
 const About = () => {
   return (
-    <section id='about' className='min-h-[75vh] py-[100px]'>
+    <section id='about' className='min-h-[95vh] py-[50px] md:py-[100px]'>
       <SectionTitle index='01.' title='About Me' />
       <div className='grid gap-10 grid-cols-1 md:grid-cols-[3fr,2fr]'>
         <div className='space-y-5'>
           <div className='space-y-5'>
             <p className='ml-1 mt-5 prose prose-lg text-lightSlate'>
-              A passionate self-taught Full Stack developer from Bangladesh.
+              Hello! I'm Hasib, a passionate self-taught Full Stack developer
+              from Bangladesh.
               <br />I develop web applications, mobile applications and desktop
-              applications
+              applications. Passionate about new technologies and problem
+              solving.
             </p>
             <p className='ml-1 mt-5 prose prose-lg text-lightSlate'>
               Here are a few technologies I've been working with recently:
@@ -31,7 +33,7 @@ const About = () => {
             <div className='z-0 rounded-lg absolute w-full h-full top-7 sm:top-9 left-7 sm:left-9 border-4 border-green group-hover:top-6 group-hover:left-6 transition-all duration-200 ease-transition'></div>
             <div className='rounded-lg overflow-hidden'>
               <img
-                className='z-10 filter grayscale hover:grayscale-[20%] transition-all duration-200 ease-transition'
+                className='z-10 filter grayscale hover:grayscale-[20%] transition-all duration-500 ease-transition'
                 src='/hasib.jpg'
                 alt=''
               />
