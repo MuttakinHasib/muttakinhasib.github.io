@@ -11,19 +11,20 @@ const About = () => {
           <div className='space-y-5'>
             <p className='ml-1 mt-5 prose prose-lg text-lightSlate'>
               Hello! I'm Hasib, a passionate self-taught Full Stack developer
-              from Bangladesh.
-              <br />I develop web applications, mobile applications and desktop
-              applications. Passionate about new technologies and problem
-              solving.
+              from Bangladesh. I build things for the web & mobile.
+              <br />I develop web applications, mobile applications & desktop
+              applications. Passionate about new technologies and
+              problem-solving. I am available for any kind of job opportunity
+              that suits my interests
             </p>
             <p className='ml-1 mt-5 prose prose-lg text-lightSlate'>
               Here are a few technologies I've been working with recently:
             </p>
           </div>
-          <ul className='ml-1 font-SFMono text-green/80 list-inside tracking-[1px] list-[square] grid gap-x-4 gap-y-3 grid-cols-[repeat(2,minmax(140px,200px))]'>
+          <ul className='ml-1 font-SFMono text-green/80 list-inside tracking-[1px] list-[square] grid gap-x-4 gap-y-3 grid-cols-[repeat(2,minmax(140px,250px))]'>
             {skills.map((skill, index) => (
-              <li className='before:' key={index}>
-                {skill.name}
+              <li key={index}>
+                <span className='ml-3'>{skill.name}</span>
               </li>
             ))}
           </ul>
