@@ -42,10 +42,16 @@ const Experience = () => {
           </div>
         </div>
         <div>
-          <h3 className='text-2xl mb-2 font-semibold flex items-center'>
-            <span className='text-lightestSlate'>{job.position}</span>
+          <h3 className='text-2xl mb-2 font-semibold flex flex-wrap items-center'>
+            <span className='text-lightestSlate whitespace-nowrap'>
+              {job.position}
+            </span>
             &nbsp;
-            <a href={job.website} target='_blank' className='text-green'>
+            <a
+              href={job.website}
+              target='_blank'
+              className='text-green whitespace-nowrap'
+            >
               @ {job.name}
             </a>
           </h3>
