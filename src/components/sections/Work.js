@@ -18,8 +18,8 @@ const Work = () => {
             <div
               className={
                 (index + 1) % 2 === 0
-                  ? 'bg-darkNavy/[0.85] h-full md:h-auto md:bg-transparent relative z-10 p-10 md:p-0 col-span-full md:col-start-1 md:col-end-[7] row-span-full'
-                  : 'bg-darkNavy/[0.85] h-full md:h-auto md:bg-transparent relative z-10 p-10 md:p-0 col-span-full md:col-start-5 lg:col-start-7 md:col-end-[-1] row-span-full'
+                  ? 'shadow-2xl md:shadow-none bg-darkNavy/[0.85] h-full md:h-auto md:bg-transparent relative z-10 px-10 py-6 sm:p-10 md:p-0 col-span-full md:col-start-1 md:col-end-[7] row-span-full'
+                  : 'shadow-2xl md:shadow-none bg-darkNavy/[0.85] h-full md:h-auto md:bg-transparent relative z-10 px-10 py-6 sm:p-10 md:p-0 col-span-full md:col-start-5 lg:col-start-7 md:col-end-[-1] row-span-full'
               }
             >
               {/* <div className='text-right'> */}
@@ -44,7 +44,7 @@ const Work = () => {
                 <p>{project.description}</p>
               </div>
               <ul
-                className={`text-green flex items-center space-x-5 mt-5 font-SFMono text-xs ${
+                className={`text-green flex flex-wrap items-center space-x-5 mt-5 font-SFMono text-xs ${
                   (index + 1) % 2 === 0
                     ? 'justify-end md:justify-start'
                     : 'justify-end'
@@ -153,10 +153,11 @@ const Work = () => {
                 rel='noopener noreferrer'
               >
                 <Image
-                  className='relative filter hover:filter-none grayscale contrast-[1] brightness-90 transition-all duration-300 ease-transition'
+                  className='relative h-full object-cover filter hover:filter-none grayscale contrast-[1] brightness-90 transition-all duration-300 ease-transition'
                   width={project.image.width}
                   height={project.image.height}
                   src={project.image.url}
+                  layout='responsive'
                   priority
                 />
 
