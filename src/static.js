@@ -54,17 +54,38 @@ module.exports = {
       name: 'TechrZ IT',
       position: 'Web Developer',
       range: 'May 2010 - Present',
-      // description: [
-      //   {
-      //     item: 'Opening / modifying / closing accounts on the system including scanning of signatures duly authorised by competent official.',
-      //   },
-      //   {
-      //     item: 'Add / modify / delete records in masters and parameter files jointly with higher authority.',
-      //   },
-      //   {
-      //     item: "Accept, modify and delete standing instructions as per customer's instructions. etc...",
-      //   },
-      // ],
+    },
+  ],
+  features: [
+    {
+      title: 'Al Quran',
+      description:
+        'One of the best Al Quran Desktop Application for macOS, Windows PC. Clean and Attractive UI/UX Design including Light & Dark Mode.',
+      technologies: ['React', 'Electron', 'Tailwind CSS'],
+      links: {
+        github: 'https://github.com/MuttakinHasib/Al-Quran',
+        download: 'https://github.com/MuttakinHasib/Al-Quran/releases',
+        external: '',
+      },
+      image: { width: 1580, height: 949, url: '/projects/al-quran.png' },
+    },
+    {
+      title: 'Anafiya',
+      description:
+        'This is a Full Stack eCommerce Web Application. Users can Login with Email, Facebook, or Google. customers can buy or review their orders, and the admin can add, delete or update products.',
+      technologies: [
+        'MongoDB',
+        'Express.js',
+        'React',
+        'Node.js',
+        'Tailwind CSS',
+      ],
+      links: {
+        github: 'https://github.com/MuttakinHasib/anafiya',
+        download: '',
+        external: 'https://anafiya.vercel.app/',
+      },
+      image: { width: 1580, height: 925, url: '/projects/anafiya.png' },
     },
   ],
 };

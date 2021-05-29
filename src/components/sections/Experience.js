@@ -31,7 +31,7 @@ const Experience = () => {
             {jobs.map((job, index) => (
               <button
                 key={index}
-                className={`focus:outline-none text-lg tracking-[1px] h-[42px] min-w-[150px] w-full pl-8 pr-8 md:pr-14 hover:bg-greenTint border-b-2 md:border-b-0 md:border-l-2 border-darkSlate flex items-center justify-center md:justify-start transition-colors duration-300${
+                className={`focus:outline-none text-lg tracking-[1px] h-[42px] min-w-[150px] w-full pl-8 pr-8 md:pr-14 hover:bg-greenTint border-b-2 md:border-b-0 md:border-l-2 border-darkSlate flex items-center justify-center md:justify-start transition-colors duration-300 ${
                   tabIndex === index ? 'text-green bg-navy' : ''
                 }`}
                 onClick={() => setTabIndex(index)}
@@ -50,7 +50,7 @@ const Experience = () => {
             <a
               href={job.website}
               target='_blank'
-              className='text-green whitespace-nowrap'
+              className='text-green break-words'
             >
               @ {job.name}
             </a>
@@ -59,7 +59,7 @@ const Experience = () => {
           {job?.description && (
             <ul className='ml-3 mt-5 list-outside tracking-[1px] list-[square]'>
               {job?.description.map((list, index) => (
-                <li className='py-2 pl-3' key={index}>
+                <li className='py-2 pl-3 text-lightSlate font-light' key={index}>
                   <span>{list.item}</span>
                 </li>
               ))}
