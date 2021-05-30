@@ -5,9 +5,9 @@ import { features } from '../../static';
 
 const Work = () => {
   return (
-    <section id='projects' className='min-h-[75vh] py-[100px]'>
+    <section id='projects' className='min-h-[75vh] py-[50px] md:py-[100px]'>
       <SectionTitle index='03.' title="Some Things I've Built" />
-      <ul className='space-y-[110px]'>
+      <ul className='space-y-[50px] md:space-y-[110px]'>
         {features.map((project, index) => (
           <li
             key={index}
@@ -167,6 +167,16 @@ const Work = () => {
           </li>
         ))}
       </ul>
+      <div className='flex justify-center items-center mt-[55px]'>
+        <a
+          href='https://github.com/MuttakinHasib?tab=repositories'
+          className='px-6 py-3 md:px-7 md:py-4 border-2 border-green text-green font-SFMono leading-[1] rounded-[4px] hover:bg-greenTint transition-colors duration-300 ease-ease-transition'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          See more
+        </a>
+      </div>
     </section>
   );
 };

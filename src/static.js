@@ -60,7 +60,7 @@ module.exports = {
     {
       title: 'Al Quran',
       description:
-        'One of the best Al Quran Desktop Application for macOS, Windows PC. Clean and Attractive UI/UX Design including Light & Dark Mode.',
+        'One of the best Al Quran Desktop Application for macOS & Windows PC. Clean and Attractive UI/UX Design including Light & Dark Mode.',
       technologies: ['React', 'Electron', 'Tailwind CSS'],
       links: {
         github: 'https://github.com/MuttakinHasib/Al-Quran',
@@ -68,6 +68,18 @@ module.exports = {
         external: '',
       },
       image: { width: 1580, height: 949, url: '/projects/al-quran.png' },
+    },
+    {
+      title: 'COVID 19',
+      description:
+        'Novel Coronavirus (COVID-19) Tracker Android App. You can view real-time DATA of COVID 19. Get country-wise corona update by searching any country name',
+      technologies: ['React', 'React Native', 'API'],
+      links: {
+        github: 'https://github.com/MuttakinHasib/covid-app',
+        download: 'https://github.com/MuttakinHasib/covid-app/releases',
+        external: '',
+      },
+      image: { width: 2400, height: 1280, url: '/projects/covid-19.png' },
     },
     {
       title: 'Anafiya',

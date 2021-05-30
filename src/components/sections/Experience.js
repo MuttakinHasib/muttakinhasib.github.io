@@ -6,9 +6,9 @@ const Experience = () => {
   const [tabIndex, setTabIndex] = useState(0);
   const job = jobs[tabIndex];
   return (
-    <section id='jobs' className='min-h-[95vh] py-[100px]'>
+    <section id='jobs' className='md:min-h-[95vh] py-[50px] md:py-[100px]'>
       <SectionTitle index='02.' title="Where I've Worked" />
-      <div className='flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-10 pt-5'>
+      <div className='flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-10'>
         <div>
           <div className='flex md:flex-col relative w-max'>
             <div
@@ -59,7 +59,10 @@ const Experience = () => {
           {job?.description && (
             <ul className='ml-3 mt-5 list-outside tracking-[1px] list-[square]'>
               {job?.description.map((list, index) => (
-                <li className='py-2 pl-3 text-lightSlate font-light' key={index}>
+                <li
+                  className='py-2 pl-3 text-lightSlate font-light'
+                  key={index}
+                >
                   <span>{list.item}</span>
                 </li>
               ))}
