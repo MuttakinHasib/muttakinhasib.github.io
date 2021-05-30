@@ -19,7 +19,7 @@ const Landing = () => {
       </div>
       <div>
         <h2 className='tracking-[1px] text-[22px] sm:text-[30px] md:text-[40px] lg:text-[50px] xl:text-[55px] font-light uppercase'>
-          Full Stack Web Developer
+          Full Stack Developer
         </h2>
       </div>
       <div>

@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Container } from '../components';
+import { Container, Side } from '../components';
 import { About, Experience, Landing, Work } from '../components/sections';
 const HomeScreen = () => {
   return (
@@ -13,6 +13,7 @@ const HomeScreen = () => {
         <Experience />
         <Work />
       </Container>
+      <Side />
     </>
   );
 };

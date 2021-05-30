@@ -34,7 +34,7 @@ const About = () => {
             <div className='z-0 rounded-lg absolute w-full h-full top-7 sm:top-9 left-7 sm:left-9 border-4 border-green group-hover:top-6 group-hover:left-6 transition-all duration-200 ease-transition'></div>
             <div className='rounded-lg overflow-hidden'>
               <img
-                className='z-10 filter grayscale hover:grayscale-[20%] transition-all duration-500 ease-transition'
+                className='z-10 filter grayscale hover:grayscale-0 transition-all duration-500 ease-transition'
                 src='/hasib.jpg'
                 alt=''
               />
