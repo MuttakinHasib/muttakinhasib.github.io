@@ -31,7 +31,7 @@ const Experience = () => {
             {jobs.map((job, index) => (
               <button
                 key={index}
-                className={`focus:outline-none text-lg tracking-[1px] h-[42px] min-w-[150px] w-full pl-8 pr-8 md:pr-14 hover:bg-greenTint border-b-2 md:border-b-0 md:border-l-2 border-darkSlate flex items-center justify-center md:justify-start transition-colors duration-300 ${
+                className={`focus:outline-none text-base tracking-[1px] h-[42px] min-w-[150px] w-full pl-8 pr-8 md:pr-14 hover:bg-greenTint border-b-2 md:border-b-0 md:border-l-2 border-darkSlate flex items-center justify-center md:justify-start transition-colors duration-300 ${
                   tabIndex === index ? 'text-green bg-navy' : ''
                 }`}
                 onClick={() => setTabIndex(index)}
