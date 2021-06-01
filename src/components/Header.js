@@ -15,13 +15,31 @@ const Header = () => {
       }`}
     >
       <nav className='flex items-center justify-between w-full'>
-        <div>
+        <div className='w-[42px] h-[42px]'>
           <Link href='/'>
-            <a
-              className='font-semibold ml-1 uppercase text-white text-xl'
-              style={{ letterSpacing: '1px' }}
-            >
-              Hasib
+            <a className='text-green w-full h-full hover:bg-greenTint transition-colors duration-300 ease-transition'>
+              {/* Hasib */}
+              <svg
+                id='logo'
+                xmlns='http://www.w3.org/2000/svg'
+                role='img'
+                viewBox='0 0 84 96'
+                fill='none'
+              >
+                <title>Logo</title>
+                <polygon
+                  id='Shape'
+                  stroke='currentColor'
+                  strokeWidth='5'
+                  points='42,3 3,25 3,70 42,93 81,71 81,26 '
+                />
+                <g>
+                  <path
+                    fill='currentColor'
+                    d='M29.3,63.9V32.1h6.4v12.5h12.6V32.1h6.4v31.8h-6.4V50H35.7v13.9H29.3z'
+                  />
+                </g>
+              </svg>
             </a>
           </Link>
         </div>
