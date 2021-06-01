@@ -1,6 +1,12 @@
 import Head from 'next/head';
 import { Container, Side } from '../components';
-import { About, Experience, Landing, Work } from '../components/sections';
+import {
+  About,
+  Contact,
+  Experience,
+  Landing,
+  Work,
+} from '../components/sections';
 const HomeScreen = () => {
   return (
     <>
@@ -12,6 +18,7 @@ const HomeScreen = () => {
         <About />
         <Experience />
         <Work />
+        <Contact />
       </Container>
       <Side />
     </>
