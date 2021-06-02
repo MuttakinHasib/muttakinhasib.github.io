@@ -152,12 +152,12 @@ const Work = () => {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <Picture
+                <img
                   className='relative h-full object-cover filter hover:filter-none grayscale contrast-[1] brightness-90 transition-all duration-300 ease-transition'
                   width={project.image.width}
                   height={project.image.height}
-                  src={require(`./projects/${project.image.url}`)}
-                  loading='lazy'
+                  src={require(`./projects/${project.image.url}?webp`)}
+                  // loading='lazy'
                   // loader
                 />
 
