@@ -1,12 +1,7 @@
-const withPlugins = require('next-compose-plugins');
-const nextImg = require('next-img/plugin');
+// next.config.js
+const withOptimizedImages = require('next-optimized-images');
 
-module.exports = withPlugins([
-  [
-    nextImg,
-    {
-      // specify the default breakpoints
-      breakpoints: [768],
-    },
-  ],
-]);
+module.exports = withOptimizedImages({
+  /* config for next-optimized-images */
+  // your config for other plugins or the general next.js here...
+});
