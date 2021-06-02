@@ -1,4 +1,5 @@
 import React from 'react';
+import { Picture } from 'next-img';
 import SectionTitle from '../SectionTitle';
 import { features } from '../../static';
 
@@ -151,11 +152,11 @@ const Work = () => {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <img
+                <Picture
                   className='relative h-full object-cover filter hover:filter-none grayscale contrast-[1] brightness-90 transition-all duration-300 ease-transition'
-                  width={project.image.width}
-                  height={project.image.height}
-                  src={project?.image?.url}
+                  // width={project.image.width}
+                  // height={project.image.height}
+                  src={require(`./projects/${project.image.url}`)}
                   loading='lazy'
                   // loader
                 />

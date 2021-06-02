@@ -67,7 +67,7 @@ module.exports = {
         download: 'https://github.com/MuttakinHasib/Al-Quran/releases',
         external: '',
       },
-      image: { width: 1580, height: 949, url: '/projects/al-quran.png' },
+      image: { width: 1580, height: 949, url: 'al-quran.png' },
     },
     {
       title: 'COVID 19',
@@ -79,7 +79,7 @@ module.exports = {
         download: 'https://github.com/MuttakinHasib/covid-app/releases',
         external: '',
       },
-      image: { width: 2400, height: 1280, url: '/projects/covid-19.png' },
+      image: { width: 2400, height: 1280, url: 'covid-19.png' },
     },
     {
       title: 'Anafiya',
@@ -97,7 +97,7 @@ module.exports = {
         download: '',
         external: 'https://anafiya.vercel.app/',
       },
-      image: { width: 1580, height: 925, url: '/projects/anafiya.png' },
+      image: { width: 1580, height: 925, url: 'anafiya.png' },
     },
   ],
 };
