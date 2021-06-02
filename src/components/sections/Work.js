@@ -159,7 +159,7 @@ const Work = () => {
                   src={project.image.url}
                   layout='responsive'
                   priority
-                  loader
+                  // loader
                 />
 
                 {/* <div className='absolute inset-0 w-full h-full z-10 bg-green/30' /> */}
