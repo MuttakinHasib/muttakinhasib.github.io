@@ -84,7 +84,7 @@ const Header = () => {
               href='/resume.pdf'
               target='_blank'
               rel='noopener noreferrer'
-              className='text-green inline-block leading-[1] text-[13px] mt-[15px] md:mt-0 ml-[12px] md:ml-[15px] font-SFMono font-medium bg-transparent border-2 border-green rounded-[4px] hover:bg-greenTint py-[0.6rem] px-4 transition-colors duration-300 ease-transition'
+              className='text-green inline-block leading-[1] text-[14px] mt-[15px] md:mt-0 ml-[12px] md:ml-[15px] font-SFMono font-medium bg-transparent border-2 border-green rounded-[4px] hover:bg-greenTint py-[0.6rem] px-4 transition-colors duration-300 ease-transition'
             >
               Resume
             </a>
