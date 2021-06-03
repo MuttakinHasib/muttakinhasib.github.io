@@ -18,7 +18,7 @@ module.exports = {
         greenTint: 'rgba(100, 255, 218, 0.1)',
       },
       fontFamily: {
-        SFMono: ['PT Mono', 'monospace'],
+        SFMono: ['Roboto Mono', 'monospace'],
       },
       transitionTimingFunction: {
         transition: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
