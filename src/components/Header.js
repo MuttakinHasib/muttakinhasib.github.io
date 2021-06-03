@@ -1,7 +1,6 @@
-import React, { createRef, useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { useMediaQuery } from '@react-hook/media-query';
 import Link from 'next/link';
-import { TweenMax, TimelineMax, gsap, Power3 } from 'gsap';
 import { Transition } from '@headlessui/react';
 import useScrollPosition from '../hooks/useScrollPosition';
 import { navLinks } from '../static';
