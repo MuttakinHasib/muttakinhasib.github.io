@@ -5,11 +5,6 @@ class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
-          <meta
-            name='description'
-            content='Hasib is a passionate self-taught Full Stack web developer from Bangladesh who develop web applications, mobile applications and desktop applications.'
-          />
-
           <link
             rel='apple-touch-icon'
             sizes='180x180'
@@ -33,7 +28,11 @@ class MyDocument extends Document {
           <meta name='theme-color' content='#ffffff' />
 
           <meta name='image' content='/banner.png' />
-          <meta property='og:title' content='Hasib' />
+          <meta property='og:title' content='Hasib Molla' />
+          <meta
+            name='description'
+            content='Hasib is a passionate self-taught Full Stack web developer from Bangladesh who develop web applications, mobile applications and desktop applications.'
+          />
           <meta
             property='og:description'
             content='Hasib is a passionate self-taught Full Stack web developer from Bangladesh who develop web applications, mobile applications and desktop applications.'
@@ -41,7 +40,7 @@ class MyDocument extends Document {
           <meta property='og:image' content='/banner.png' />
           <meta property='og:url' content='https://muttakinhasib.github.io/' />
           <meta property='og:type' content='website' />
-
+          
           <meta name='twitter:card' content='summary_large_image' />
           <meta name='twitter:creator' content='@MuttakinHasib' />
           <meta name='twitter:title' content='Hasib Molla' />
@@ -49,6 +48,8 @@ class MyDocument extends Document {
             name='twitter:description'
             content='Hasib is a passionate self-taught Full Stack web developer from Bangladesh who develop web applications, mobile applications and desktop applications '
           />
+          <meta name='twitter:image' content='/banner.png' />
+
           <link rel='preconnect' href='https://fonts.gstatic.com' />
           <link
             href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'
@@ -58,8 +59,6 @@ class MyDocument extends Document {
             href='https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500&display=swap'
             rel='stylesheet'
           />
-
-          <meta name='twitter:image' content='/banner.png' />
         </Head>
         <body className='bg-darkNavy'>
           <Main />
