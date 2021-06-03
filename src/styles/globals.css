@@ -31,7 +31,7 @@ body::-webkit-scrollbar-thumb {
   content: '0' counter(item) '.';
   margin-right: 5px;
   color: #64ffda;
-  font-size: 12px;
+  font-size: 14px;
   text-align: right;
 }
 

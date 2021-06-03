@@ -71,7 +71,7 @@ const Header = () => {
                 leave='transition-opacity delay-600 transition-transform duration-500 ease-transition'
                 leaveFrom='opacity-100'
                 leaveTo='opacity-0'
-                className='md:mx-1 py-3 md:py-0 relative order font-SFMono text-[13px] leading-[1] text-lightestSlate hover:text-green transition-colors duration-300'
+                className='md:mx-1 py-3 md:py-0 relative order font-SFMono text-[15px] leading-[1] text-lightestSlate hover:text-green transition-colors duration-300'
               >
                 <a className='p-[10px] order-item' href={link.url}>
                   {link.name}
