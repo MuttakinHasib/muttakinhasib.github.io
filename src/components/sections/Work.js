@@ -1,5 +1,4 @@
 import React from 'react';
-import { Picture } from 'next-img';
 import SectionTitle from '../SectionTitle';
 import { features } from '../../static';
 
