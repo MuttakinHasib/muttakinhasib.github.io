@@ -11,6 +11,7 @@
   "dependencies": {
     "@headlessui/react": "^1.2.0",
     "@react-hook/media-query": "^1.1.1",
+    "framer-motion": "^4.1.17",
     "gsap": "^3.6.1",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
