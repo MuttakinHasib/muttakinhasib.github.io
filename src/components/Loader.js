@@ -1,11 +1,12 @@
+import { AnimatePresence } from 'framer-motion';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
 const Loader = ({ setLoading }) => {
-  useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2500);
-    return () => clearTimeout(timer);
-  }, []);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => setLoading(false), 2500);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   const svgVariants = {
     hidden: {
@@ -47,36 +48,42 @@ const Loader = ({ setLoading }) => {
   };
 
   return (
-    <div className='bg-darkNavy w-screen h-screen flex items-center justify-center fixed inset-0 z-[99]'>
-      <div className='w-20 h-20 text-green'>
-        <motion.svg
-          variants={svgVariants}
-          initial='hidden'
-          animate='visible'
-          id='logo'
-          xmlns='http://www.w3.org/2000/svg'
-          role='img'
-          viewBox='0 0 84 96'
-          fill='none'
-        >
-          <title>Logo</title>
-          <motion.path
-            variants={pathVariants}
-            d='M42 3L3 25v45l39 23 39-22V26z'
+    <AnimatePresence>
+      <motion.div
+        key='loader'
+        className='bg-darkNavy w-screen h-screen flex items-center justify-center fixed inset-0 z-[99]'
+      >
+        <div className='w-20 h-20 text-green'>
+          <motion.svg
+            variants={svgVariants}
+            initial='hidden'
+            animate='visible'
+            onAnimationComplete={() => setLoading(false)}
+            id='logo'
+            xmlns='http://www.w3.org/2000/svg'
+            role='img'
+            viewBox='0 0 84 96'
             fill='none'
-            stroke='currentColor'
-            strokeWidth={5}
-          />
-          <g>
+          >
+            <title>Logo</title>
             <motion.path
-              variants={textVariants}
-              fill='currentColor'
-              d='M29.3,63.9V32.1h6.4v12.5h12.6V32.1h6.4v31.8h-6.4V50H35.7v13.9H29.3z'
+              variants={pathVariants}
+              d='M42 3L3 25v45l39 23 39-22V26z'
+              fill='none'
+              stroke='currentColor'
+              strokeWidth={5}
             />
-          </g>
-        </motion.svg>
-      </div>
-    </div>
+            <g>
+              <motion.path
+                variants={textVariants}
+                fill='currentColor'
+                d='M29.3,63.9V32.1h6.4v12.5h12.6V32.1h6.4v31.8h-6.4V50H35.7v13.9H29.3z'
+              />
+            </g>
+          </motion.svg>
+        </div>
+      </motion.div>
+    </AnimatePresence>
   );
 };
 

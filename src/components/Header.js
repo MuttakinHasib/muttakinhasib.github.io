@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { useMediaQuery } from '@react-hook/media-query';
 import Link from 'next/link';
 import { Transition } from '@headlessui/react';
@@ -20,7 +21,15 @@ const Header = () => {
       }`}
     >
       <nav className='flex flex-col md:flex-row md:items-center justify-center md:justify-between w-full relative'>
-        <div className='w-[32px] md:w-[42px] w-[32px] md:h-[42px]'>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{
+            opacity: 1,
+            scale: 1,
+            transition: { delay: 2.3, duration: 0.5, ease: 'easeInOut' },
+          }}
+          className='w-[32px] md:w-[42px] md:h-[42px]'
+        >
           <Link href='/'>
             <a className='text-green w-full h-full hover:bg-greenTint transition-colors duration-300 ease-transition'>
               {/* Hasib */}
@@ -47,7 +56,7 @@ const Header = () => {
               </svg>
             </a>
           </Link>
-        </div>
+        </motion.div>
         <Transition
           appear={true}
           show={isOpen}
@@ -59,7 +68,15 @@ const Header = () => {
           leaveTo='opacity-0'
           className='flex flex-col md:flex-row md:items-center mt-5 md:mt-0'
         >
-          <ol className='flex flex-col md:flex-row md:items-center md:justify-between list-outside'>
+          <motion.ol
+            initial={{ opacity: 0, y: 10 }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: 0.6, delay: 2.5, ease: 'easeInOut' },
+            }}
+            className='flex flex-col md:flex-row md:items-center md:justify-between list-outside'
+          >
             {navLinks.map((link, index) => (
               <Transition.Child
                 key={index}
@@ -77,8 +94,15 @@ const Header = () => {
                 </a>
               </Transition.Child>
             ))}
-          </ol>
-          <div>
+          </motion.ol>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: 0.6, delay: 2.7, ease: 'easeInOut' },
+            }}
+          >
             <a
               href='/resume.pdf'
               target='_blank'
@@ -87,7 +111,7 @@ const Header = () => {
             >
               Resume
             </a>
-          </div>
+          </motion.div>
         </Transition>
         <button
           className='inline-block md:hidden focus:outline-none text-green absolute top-0 right-0'
