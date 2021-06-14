@@ -1,17 +1,30 @@
-<<<<<<< HEAD
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="logo" x="0" y="0" version="1.1" viewBox="0 0 84 96" xml:space="preserve" style="enable-background:new 0 0 84 96"><style type="text/css">.st0{fill:none;stroke:#3bc10a;stroke-width:5}.st1{fill:#3bc10a}</style><polygon id="Shape" points="42 3 3 25 3 70 42 93 81 71 81 26" class="st0"/><g><path d="M29.3,63.9V32.1h6.4v12.5h12.6V32.1h6.4v31.8h-6.4V50H35.7v13.9H29.3z" class="st1"/></g></svg>
-=======
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 84 96" style="enable-background:new 0 0 84 96;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#020C1B;stroke:#64FFDA;stroke-width:5;}
-	.st1{fill:#64FFDA;}
-</style>
-<polygon id="Shape" class="st0" points="42,3 3,25 3,70 42,93 81,71 81,26 "/>
-<g>
-	<path class="st1" d="M29.3,63.9V32.1h6.4v12.5h12.6V32.1h6.4v31.8h-6.4V50H35.7v13.9H29.3z"/>
-</g>
-</svg>
->>>>>>> develop
+ <svg
+            
+            id='logo'
+            xmlns='http://www.w3.org/2000/svg'
+            role='img'
+            viewBox='0 0 0 0 100 100'
+            fill='none'
+          >
+            <title>Logo</title>
+            
+            <path
+              
+              stroke='currentColor'
+              strokeWidth='5'
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              d='M 50, 5
+                  L 11, 27
+                  L 11, 72
+                  L 50, 95
+                  L 89, 73
+                  L 89, 28 z'
+            />
+            <g>
+              <path
+                fill='currentColor'
+                d='M29.3,63.9V32.1h6.4v12.5h12.6V32.1h6.4v31.8h-6.4V50H35.7v13.9H29.3z'
+              />
+            </g>
+          </svg>
