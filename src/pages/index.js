@@ -19,6 +19,7 @@ const HomeScreen = () => {
         <title>Hasib - Full Stack Developer</title>
       </Head>
       {loading && <Loader {...{ loading, setLoading }} />}
+
       {!loading && (
         <>
           <Container>

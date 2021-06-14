@@ -1,12 +1,7 @@
 import { AnimatePresence } from 'framer-motion';
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
 
 const Loader = ({ setLoading }) => {
-  // useEffect(() => {
-  //   const timer = setTimeout(() => setLoading(false), 2500);
-  //   return () => clearTimeout(timer);
-  // }, []);
 
   const svgVariants = {
     hidden: {
@@ -51,9 +46,9 @@ const Loader = ({ setLoading }) => {
     <AnimatePresence>
       <motion.div
         key='loader'
-        className='bg-darkNavy w-screen h-screen flex items-center justify-center relative z-[99]'
+        className='bg-darkNavy w-full h-screen flex items-center justify-center fixed inset-0 z-[99]'
       >
-        <div className='w-48 h-48 text-green'>
+        <div className='w-32 h-32 text-green'>
           <motion.svg
             variants={svgVariants}
             initial='hidden'
@@ -62,17 +57,11 @@ const Loader = ({ setLoading }) => {
             id='logo'
             xmlns='http://www.w3.org/2000/svg'
             role='img'
-            viewBox='0 0 0 0 100 100'
+            viewBox='0 0 100 100'
             fill='none'
           >
             <title>Logo</title>
-            {/* <motion.path
-              variants={pathVariants}
-              d='M42 3L3 25v45l39 23 39-22V26z'
-              fill='none'
-              stroke='currentColor'
-              strokeWidth={5}
-            /> */}
+
             <motion.path
               variants={pathVariants}
               stroke='currentColor'
