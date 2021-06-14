@@ -73,7 +73,11 @@ const Header = () => {
             animate={{
               opacity: 1,
               y: 0,
-              transition: { duration: 0.6, delay: 2.5, ease: 'easeInOut' },
+              transition: {
+                duration: 0.6,
+                delay: !isMediumDevice ? 0.1 : 2.7,
+                ease: 'easeInOut',
+              },
             }}
             className='flex flex-col md:flex-row md:items-center md:justify-between list-outside'
           >
@@ -100,7 +104,11 @@ const Header = () => {
             animate={{
               opacity: 1,
               y: 0,
-              transition: { duration: 0.6, delay: 2.7, ease: 'easeInOut' },
+              transition: {
+                duration: 0.6,
+                delay: !isMediumDevice ? 0.2 : 2.7,
+                ease: 'easeInOut',
+              },
             }}
           >
             <a
