@@ -1,6 +1,15 @@
+import { motion } from 'framer-motion';
+
 const BgAnimation = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, scale: 2 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        delay: 0.6,
+        duration: 0.7,
+      }}
+    >
       <svg
         className='BgAnimation__svg'
         viewBox='0 0 602 602'
@@ -358,7 +367,7 @@ const BgAnimation = () => {
           </linearGradient>
         </defs>
       </svg>
-    </div>
+    </motion.div>
   );
 };
 
