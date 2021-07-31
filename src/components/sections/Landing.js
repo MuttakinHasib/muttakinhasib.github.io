@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import { email } from '../../static';
+import BgAnimation from './BgAnimation';
 
 const Landing = () => {
   const container = {
@@ -27,8 +28,11 @@ const Landing = () => {
       variants={container}
       initial='initial'
       animate='animate'
-      className='min-h-[90vh] md:pt-[100px] flex flex-col justify-center items-start'
+      className='min-h-[90vh] md:pt-[100px] flex flex-col justify-center items-start relative'
     >
+      <div className='absolute -right-32 top-50 max-w-lg w-full'>
+        <BgAnimation />
+      </div>
       <motion.div variants={item}>
         <p className='text-base ml-1 mb-[30px] uppercase text-green font-SFMono'>
           Hey there!
@@ -56,7 +60,7 @@ const Landing = () => {
       <motion.div variants={item}>
         <a
           href={`mailto:${email}`}
-          className='px-6 py-4 md:px-7 md:py-5 border-2 border-green text-green mt-[50px] block font-SFMono leading-[1] rounded-[4px] hover:bg-greenTint transition-colors duration-300 ease-ease-transition'
+          className='inline-block px-6 py-4 md:px-7 md:py-5 border-2 border-green text-green mt-[50px] block font-SFMono leading-[1] rounded-[4px] hover:bg-greenTint transition-colors duration-300 ease-ease-transition'
         >
           Get In Touch
         </a>
