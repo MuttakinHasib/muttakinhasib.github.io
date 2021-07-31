@@ -28,7 +28,7 @@ const Landing = () => {
       variants={container}
       initial='initial'
       animate='animate'
-      className='min-h-[90vh] md:pt-[100px] flex flex-col justify-center items-start relative'
+      className='min-h-[90vh] md:pt-[100px] flex flex-col justify-center items-start relative overflow-hidden'
     >
       <div className='absolute sm:-right-32 top-50 max-w-lg w-full'>
         <BgAnimation />
