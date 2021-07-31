@@ -30,7 +30,7 @@ const Landing = () => {
       animate='animate'
       className='min-h-[90vh] md:pt-[100px] flex flex-col justify-center items-start relative'
     >
-      <div className='absolute md:-right-32 top-50 max-w-lg w-full'>
+      <div className='absolute sm:-right-32 top-50 max-w-lg w-full'>
         <BgAnimation />
       </div>
       <motion.div variants={item}>
