@@ -7,6 +7,11 @@ html {
   scrollbar-width: thin;
   scrollbar-color: #0a192f #020c1b;
 }
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 body {
   color: #a8b2d1;
   font-family: 'Roboto', sans-serif;
