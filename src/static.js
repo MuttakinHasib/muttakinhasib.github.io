@@ -39,13 +39,10 @@ module.exports = {
       website: 'https://www.beweddy.com/',
       description: [
         {
-          item: 'Opening / modifying / closing accounts on the system including scanning of signatures duly authorised by competent official.',
+          item: 'Work with a variety of different platforms, frameworks, and content management systems such as JavaScript, TypeScript, React, Next.js, Express and MongoDB.',
         },
         {
-          item: 'Add / modify / delete records in masters and parameter files jointly with higher authority.',
-        },
-        {
-          item: "Accept, modify and delete standing instructions as per customer's instructions. etc...",
+          item: 'Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis',
         },
       ],
     },
@@ -57,10 +54,13 @@ module.exports = {
       website: 'https://www.islamibankbd.com/',
       description: [
         {
-          item: 'Work with a variety of different platforms, frameworks, and content management systems such as JavaScript, TypeScript, React, Next.js, Express and MongoDB.',
+          item: 'Opening / modifying / closing accounts on the system including scanning of signatures duly authorised by competent official.',
         },
         {
-          item: 'Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis',
+          item: 'Add / modify / delete records in masters and parameter files jointly with higher authority.',
+        },
+        {
+          item: "Accept, modify and delete standing instructions as per customer's instructions. etc...",
         },
       ],
     },
