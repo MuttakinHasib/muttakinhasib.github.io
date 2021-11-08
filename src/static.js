@@ -35,7 +35,7 @@ module.exports = {
       company: 'BeWeddy',
       name: 'Beweddy',
       position: 'Software Engineer',
-      range: 'Sep 2020 - Present',
+      range: 'July 2021 - Present',
       website: 'https://www.beweddy.com/',
       description: [
         {
