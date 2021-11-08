@@ -32,7 +32,7 @@ module.exports = {
   ],
   jobs: [
     {
-      company: 'BeWeddy',
+      company: 'Beweddy',
       name: 'Beweddy',
       position: 'Software Engineer',
       range: 'July 2021 - Present',
