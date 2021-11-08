@@ -32,11 +32,11 @@ module.exports = {
   ],
   jobs: [
     {
-      company: 'IBBL',
-      name: 'Islami Bank Bangladesh Limited',
-      position: 'Computer Operator',
-      range: 'Sep 2020 - Feb 2021',
-      website: 'https://www.islamibankbd.com/',
+      company: 'BeWeddy',
+      name: 'Beweddy',
+      position: 'Software Engineer',
+      range: 'Sep 2020 - Present',
+      website: 'https://www.beweddy.com/',
       description: [
         {
           item: 'Opening / modifying / closing accounts on the system including scanning of signatures duly authorised by competent official.',
@@ -50,10 +50,25 @@ module.exports = {
       ],
     },
     {
+      company: 'IBBL',
+      name: 'Islami Bank Bangladesh Limited',
+      position: 'Computer Operator',
+      range: 'Sep 2020 - Feb 2021',
+      website: 'https://www.islamibankbd.com/',
+      description: [
+        {
+          item: 'Work with a variety of different platforms, frameworks, and content management systems such as JavaScript, TypeScript, React, Next.js, Express and MongoDB.',
+        },
+        {
+          item: 'Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis',
+        },
+      ],
+    },
+    {
       company: 'TechrZ IT',
       name: 'TechrZ IT',
       position: 'Web Developer',
-      range: 'May 2010 - Present',
+      range: 'May 2017 - Present',
     },
   ],
   features: [
