@@ -35,7 +35,7 @@ const About = () => {
             <div className='rounded-lg overflow-hidden'>
               <img
                 className='z-10 filter grayscale hover:grayscale-0 transition-all duration-500 ease-transition'
-                src='/hasib.jpg'
+                src='/hasib.jpeg'
                 alt=''
               />
             </div>
