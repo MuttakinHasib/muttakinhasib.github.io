@@ -31,15 +31,12 @@ const FamilyTree = () => {
   };
 
   useEffect(() => {
-    if (treeContainer.current) {
-      const dimensions = treeContainer.current.getBoundingClientRect();
-      console.log(dimensions);
-      // setDimensions({
-      //   width,
-      //   height,
-      // });
+    const dimensions = treeContainer?.current?.getBoundingClientRect();
+    if (dimensions) {
+      setTranslateX(dimensions.width / 2.5);
+      setTranslateY(dimensions.height / 2);
     }
-  }, [treeContainer.current]);
+  }, [treeContainer]);
 
   return (
     <React.Fragment>
@@ -63,25 +60,27 @@ const FamilyTree = () => {
               Family Tree
             </h1>
           </motion.div>
-          <motion.div variants={item} className="min-h-[90vh]">
-            <div ref={treeContainer}>
-              <Tree
-                svgClassName="min-h-screen !stroke-[#fff]"
-                data={familyTree}
-                translate={{ x: translateX, y: translateY }}
-                initialDepth={1}
-                transitionDuration={500}
-                // scaleExtent={{ min: 1.2 }}
-                dimensions={dimensions}
-                hasInteractiveNodes
-                orientation="vertical"
-                enableLegacyTransitions
-                centeringTransitionDuration={8000}
-                rootNodeClassName="!fill-[#fff] !stroke-[#fff]"
-                branchNodeClassName="!fill-[#fff] !stroke-[#fff]"
-                leafNodeClassName="!fill-[#fff] !stroke-[#fff]"
-              />
-            </div>
+          <motion.div
+            ref={(ref) => (treeContainer.current = ref)}
+            variants={item}
+            className="min-h-[90vh]"
+          >
+            <Tree
+              svgClassName="min-h-screen !stroke-[#fff]"
+              data={familyTree}
+              translate={{ x: translateX, y: translateY }}
+              initialDepth={1}
+              transitionDuration={500}
+              // scaleExtent={{ min: 1.2 }}
+              dimensions={dimensions}
+              hasInteractiveNodes
+              orientation="vertical"
+              enableLegacyTransitions
+              centeringTransitionDuration={8000}
+              rootNodeClassName="!fill-[#fff] !stroke-[#fff]"
+              branchNodeClassName="!fill-[#fff] !stroke-[#fff]"
+              leafNodeClassName="!fill-[#fff] !stroke-[#fff]"
+            />
           </motion.div>
         </motion.div>
         // </Container>
