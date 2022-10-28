@@ -9,12 +9,12 @@ html {
 }
 
 * {
-    -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
   color: #a8b2d1;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 body::-webkit-scrollbar {
   width: 12px;
@@ -33,7 +33,7 @@ body::-webkit-scrollbar-thumb {
   counter-increment: item 1;
 }
 .order-item::before {
-  content: '0' counter(item) '.';
+  content: "0" counter(item) ".";
   margin-right: 5px;
   color: #64ffda;
   font-size: 14px;
@@ -55,4 +55,12 @@ body::-webkit-scrollbar-thumb {
 section {
   margin: 0 auto;
   max-width: 1000px;
+}
+
+.rd3t-link {
+  @apply !stroke-[#fff];
+}
+.rd3t-label__title,
+.rd3t-label__attributes {
+  @apply !fill-[#fff];
 }
