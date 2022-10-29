@@ -71,7 +71,9 @@ const FamilyTree = () => {
               translate={{ x: translateX, y: translateY }}
               initialDepth={1}
               transitionDuration={500}
-              // scaleExtent={{ min: 1.2 }}
+              zoomable
+              zoom={2}
+              separation={{ siblings: 2, nonSiblings: 2 }}
               dimensions={dimensions}
               hasInteractiveNodes
               orientation="vertical"

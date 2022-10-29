@@ -64,3 +64,12 @@ section {
 .rd3t-label__attributes {
   @apply !fill-[#fff];
 }
+
+.rd3t-label__attributes {
+  font-size: x-small !important;
+  fill: #f4f4f4 !important;
+}
+
+.rd3t-label__attributes tspan {
+  fill: #ddd !important;
+}
