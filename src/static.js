@@ -1,5 +1,5 @@
 module.exports = {
-  email: 'hasibmolla28@gmail.com',
+  email: 'muttakinislamhasib@gmail.com',
   navLinks: [
     {
       name: 'About',
@@ -34,7 +34,7 @@ module.exports = {
     {
       company: 'Beweddy',
       name: 'Beweddy',
-      position: 'Software Engineer',
+      position: 'Chief Technology Officer',
       range: 'July 2021 - Present',
       website: 'https://www.beweddy.com/',
       description: [
