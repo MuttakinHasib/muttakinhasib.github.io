@@ -30,31 +30,33 @@ const Header = () => {
           }}
           className='w-[32px] md:w-[42px] md:h-[42px]'
         >
-          <Link href='/'>
-            <a className='text-green w-full h-full hover:bg-greenTint transition-colors duration-300 ease-transition'>
-              {/* Hasib */}
-              <svg
-                id='logo'
-                xmlns='http://www.w3.org/2000/svg'
-                role='img'
-                viewBox='0 0 84 96'
-                fill='none'
-              >
-                <title>Logo</title>
-                <polygon
-                  id='Shape'
-                  stroke='currentColor'
-                  strokeWidth='5'
-                  points='42,3 3,25 3,70 42,93 81,71 81,26 '
+          <Link
+            href='/'
+            className='text-green w-full h-full hover:bg-greenTint transition-colors duration-300 ease-transition'>
+
+            {/* Hasib */}
+            <svg
+              id='logo'
+              xmlns='http://www.w3.org/2000/svg'
+              role='img'
+              viewBox='0 0 84 96'
+              fill='none'
+            >
+              <title>Logo</title>
+              <polygon
+                id='Shape'
+                stroke='currentColor'
+                strokeWidth='5'
+                points='42,3 3,25 3,70 42,93 81,71 81,26 '
+              />
+              <g>
+                <path
+                  fill='currentColor'
+                  d='M29.3,63.9V32.1h6.4v12.5h12.6V32.1h6.4v31.8h-6.4V50H35.7v13.9H29.3z'
                 />
-                <g>
-                  <path
-                    fill='currentColor'
-                    d='M29.3,63.9V32.1h6.4v12.5h12.6V32.1h6.4v31.8h-6.4V50H35.7v13.9H29.3z'
-                  />
-                </g>
-              </svg>
-            </a>
+              </g>
+            </svg>
+
           </Link>
         </motion.div>
         <Transition
