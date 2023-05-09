@@ -175,7 +175,7 @@ const Work = () => {
           target='_blank'
           rel='noopener noreferrer'
         >
-          See more
+          View more
         </a>
       </div>
     </section>
