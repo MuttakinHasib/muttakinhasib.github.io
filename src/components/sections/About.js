@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionTitle from '../SectionTitle';
 import { skills } from '../../static';
+import Image from 'next/image';
 
 const About = () => {
   return (
@@ -29,14 +30,17 @@ const About = () => {
             ))}
           </ul>
         </div>
-        <div className='max-w-[300px] mx-auto '>
+        <div className='max-w-[300px] mx-auto'>
           <div className='relative shadow-2xl group cursor-pointer'>
             <div className='z-0 rounded-lg absolute w-full h-full top-7 sm:top-9 left-7 sm:left-9 border-4 border-green group-hover:top-6 group-hover:left-6 transition-all duration-200 ease-transition'></div>
             <div className='rounded-lg overflow-hidden'>
-              <img
+              <Image
+              width={300}
+              height={300}
                 className='z-10 filter grayscale hover:grayscale-0 transition-all duration-500 ease-transition'
                 src='/hasib.jpeg'
-                alt=''
+                priority
+                alt='Hasib'
               />
             </div>
           </div>
